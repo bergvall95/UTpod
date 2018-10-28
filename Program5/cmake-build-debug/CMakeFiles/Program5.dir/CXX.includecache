@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Naris/Documents/EE312/Program5/UtPod.cpp
+UtPod.h
+C:/Users/Naris/Documents/EE312/Program5/UtPod.h
+string
+-
+iostream
+-
+cstdlib
+-
+ctime
+-
+
+C:/Users/Naris/Documents/EE312/Program5/UtPod.h
+string
+-
+song.h
+C:/Users/Naris/Documents/EE312/Program5/song.h
+
+C:/Users/Naris/Documents/EE312/Program5/song.h
+string
+-
+
