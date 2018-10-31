@@ -27,7 +27,24 @@ private:
     SongNode *songs;  //the head pointer
 
     int memSize;
+    int getNumSongs(){
+        int sum = 0;
+        SongNode *curr = songs;
+        if(songs ==NULL) { // empty list becomes the new node
+            return 0;
+        }
 
+        while(1){
+            sum++;
+            curr = curr -> next;
+            if(curr == NULL){
+                break;
+            }
+
+        }
+
+        return sum;
+    };
 
 public:
     UtPod();
@@ -45,7 +62,7 @@ public:
     }
 
     int getRemainingMemory();
-    int getNumSongs();
+
     void clearMemory();
     ~UtPod();
 

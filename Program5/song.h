@@ -15,7 +15,7 @@ private:
     string title;
     int memory;
 
-    static const int minmem = 1;
+    static const int minmem = 0;
 
 public:
     song();

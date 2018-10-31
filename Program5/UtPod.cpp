@@ -21,25 +21,6 @@ UtPod::UtPod(int size) {
 
 }
 
-int UtPod ::getNumSongs() {
-    int sum = 0;
-    SongNode *curr = songs;
-    if(songs ==NULL) { // empty list becomes the new node
-        return 0;
-    }
-
-    while(1){
-        sum++;
-        curr = curr -> next;
-        if(curr == NULL){
-            break;
-        }
-
-    }
-
-    return sum;
-}
-
 int UtPod ::getRemainingMemory() {
     int sum = 0;
     SongNode *curr = songs;
@@ -64,14 +45,16 @@ int UtPod ::addSong(song const &s) {
     temp -> s = s;
     temp -> next = NULL;
     SongNode *last = songs;
+
+    if(getRemainingMemory()- s.getMemory() <= 0){
+        return NO_MEMORY;
+    }
     if(songs ==NULL) {
         songs = temp;
         return SUCCESS ;
     }
 
-    if(getRemainingMemory()- s.getMemory() <= 0){
-        return NO_MEMORY;
-    }
+
 
     while(last->next != NULL){
         last = last -> next;
@@ -114,6 +97,7 @@ void UtPod ::showSongList() {
 
     SongNode *cur = songs;
     if(songs ==NULL) { // empty list becomes the new node
+        cout << "No Songs";
         return;
     }
 
@@ -280,6 +264,8 @@ void UtPod ::clearMemory() {
 }
 UtPod::~UtPod(){
     clearMemory();
+    this->showSongList();
+
 }
 
 
