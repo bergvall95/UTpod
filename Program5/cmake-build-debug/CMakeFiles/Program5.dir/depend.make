@@ -5,9 +5,9 @@ CMakeFiles/Program5.dir/UtPod.cpp.obj: ../UtPod.cpp
 CMakeFiles/Program5.dir/UtPod.cpp.obj: ../UtPod.h
 CMakeFiles/Program5.dir/UtPod.cpp.obj: ../song.h
 
-CMakeFiles/Program5.dir/main.cpp.obj: ../UtPod.h
-CMakeFiles/Program5.dir/main.cpp.obj: ../main.cpp
-CMakeFiles/Program5.dir/main.cpp.obj: ../song.h
+CMakeFiles/Program5.dir/UtPodDriver.cpp.obj: ../UtPod.h
+CMakeFiles/Program5.dir/UtPodDriver.cpp.obj: ../UtPodDriver.cpp
+CMakeFiles/Program5.dir/UtPodDriver.cpp.obj: ../song.h
 
 CMakeFiles/Program5.dir/song.cpp.obj: ../song.cpp
 CMakeFiles/Program5.dir/song.cpp.obj: ../song.h

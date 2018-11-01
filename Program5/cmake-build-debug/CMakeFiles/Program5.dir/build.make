@@ -56,18 +56,18 @@ include CMakeFiles/Program5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Program5.dir/flags.make
 
-CMakeFiles/Program5.dir/main.cpp.obj: CMakeFiles/Program5.dir/flags.make
-CMakeFiles/Program5.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Naris\Documents\EE312\Program5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Program5.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Program5.dir\main.cpp.obj -c C:\Users\Naris\Documents\EE312\Program5\main.cpp
+CMakeFiles/Program5.dir/UtPodDriver.cpp.obj: CMakeFiles/Program5.dir/flags.make
+CMakeFiles/Program5.dir/UtPodDriver.cpp.obj: ../UtPodDriver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Naris\Documents\EE312\Program5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Program5.dir/UtPodDriver.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Program5.dir\UtPodDriver.cpp.obj -c C:\Users\Naris\Documents\EE312\Program5\UtPodDriver.cpp
 
-CMakeFiles/Program5.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Program5.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Naris\Documents\EE312\Program5\main.cpp > CMakeFiles\Program5.dir\main.cpp.i
+CMakeFiles/Program5.dir/UtPodDriver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Program5.dir/UtPodDriver.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Naris\Documents\EE312\Program5\UtPodDriver.cpp > CMakeFiles\Program5.dir\UtPodDriver.cpp.i
 
-CMakeFiles/Program5.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Program5.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Naris\Documents\EE312\Program5\main.cpp -o CMakeFiles\Program5.dir\main.cpp.s
+CMakeFiles/Program5.dir/UtPodDriver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Program5.dir/UtPodDriver.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Naris\Documents\EE312\Program5\UtPodDriver.cpp -o CMakeFiles\Program5.dir\UtPodDriver.cpp.s
 
 CMakeFiles/Program5.dir/song.cpp.obj: CMakeFiles/Program5.dir/flags.make
 CMakeFiles/Program5.dir/song.cpp.obj: ../song.cpp
@@ -97,14 +97,14 @@ CMakeFiles/Program5.dir/UtPod.cpp.s: cmake_force
 
 # Object files for target Program5
 Program5_OBJECTS = \
-"CMakeFiles/Program5.dir/main.cpp.obj" \
+"CMakeFiles/Program5.dir/UtPodDriver.cpp.obj" \
 "CMakeFiles/Program5.dir/song.cpp.obj" \
 "CMakeFiles/Program5.dir/UtPod.cpp.obj"
 
 # External object files for target Program5
 Program5_EXTERNAL_OBJECTS =
 
-Program5.exe: CMakeFiles/Program5.dir/main.cpp.obj
+Program5.exe: CMakeFiles/Program5.dir/UtPodDriver.cpp.obj
 Program5.exe: CMakeFiles/Program5.dir/song.cpp.obj
 Program5.exe: CMakeFiles/Program5.dir/UtPod.cpp.obj
 Program5.exe: CMakeFiles/Program5.dir/build.make

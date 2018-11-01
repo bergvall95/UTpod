@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Program5.dir/main.cpp.obj"
+  "CMakeFiles/Program5.dir/UtPodDriver.cpp.obj"
   "CMakeFiles/Program5.dir/song.cpp.obj"
   "CMakeFiles/Program5.dir/UtPod.cpp.obj"
   "Program5.pdb"

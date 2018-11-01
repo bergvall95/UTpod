@@ -60,17 +60,17 @@ int UtPod ::addSong(song const &s) {
         last = last -> next;
     }
     last->next = temp;
-    //free(temp);
     return  SUCCESS;
 }
 
 int UtPod ::removeSong(song const &s) {
     SongNode *temp = new SongNode;
     SongNode *check = songs;
+    SongNode *prev;
     if(songs ==NULL) {
         return NOT_FOUND;
     }
-    while(check->next != NULL){
+    while(check != NULL){
         string a = check -> s.getTitle();
         string b = s.getTitle();
         string c = check -> s.getArtist();
@@ -79,11 +79,19 @@ int UtPod ::removeSong(song const &s) {
         int m2 = s.getMemory();
         if(a.compare(b) == 0 && c.compare(d) == 0 && m1 == m2){
             temp = check->next;
-            check->s = temp->s;
-            check->next = temp->next;
-            free(temp);
-            return SUCCESS;
+            if(check->next == NULL){
+                prev->next = NULL;
+                delete(check);
+                return SUCCESS;
+            }
+            else {
+                check->s = temp->s;
+                check->next = temp->next;
+                delete(temp);
+                return SUCCESS;
+            }
         }
+        prev = check;
         check = check -> next;
 
     }
@@ -250,18 +258,30 @@ void UtPod ::sortSongList() {
 }
 
 void UtPod ::clearMemory() {
+    SongNode *temp = new SongNode;
     SongNode *check = songs;
+    SongNode *prev;
     if(songs ==NULL) {
         return;
     }
-    while(check->next != NULL){
+    while(check != NULL){
+            temp = check->next;
+            if(check->next == NULL){
+                prev->next = NULL;
+                delete(check);
+            }
+            else {
+                check->s = temp->s;
+                check->next = temp->next;
+                delete(temp);
+            }
 
-        free(check);
-        check = check -> next;
-
-    }
-    songs = NULL;
+            prev = check;
+            check = check -> next;
+        }
+        songs = NULL;
 }
+
 UtPod::~UtPod(){
     clearMemory();
     this->showSongList();
